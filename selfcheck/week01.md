@@ -26,7 +26,7 @@ a Java osztályokat fogjátok alapszinten megismerni.
 * [x] [Objektumok és attribútumok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709892-objektumok-es-attributumok)
 * [x] Objektumok és attribútumok gyakorlati feladat
 * [x] [Metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709890-metodusok)
-* [ ] Metódusok gyakorlati feladat
+* [x] Metódusok gyakorlati feladat
 * [ ] [Konstruktorok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709840-konstruktorok)
 * [ ] Konstruktorok gyakorlati feladat
 * [ ] [UML, példányok konzol íráskor/olvasáskor videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709862-uml-peldanyok-konzol-iraskor-olvasaskor)
@@ -38,13 +38,13 @@ a Java osztályokat fogjátok alapszinten megismerni.
 * [x] 2022-07-26 konzultáció részvétel/videó
 * [x] 2022-07-27 konzultáció részvétel/videó
 * [x] 2022-07-28 konzultáció részvétel/videó
-* [ ] 2022-07-29 konzultáció részvétel/videó
+* [x] 2022-07-29 konzultáció részvétel/videó
 
 * [x] 2022-07-25 konzultáció gyakorlati feladat (ha van)
 * [x] 2022-07-26 konzultáció gyakorlati feladat (ha van)
 * [x] 2022-07-27 konzultáció gyakorlati feladat (ha van)
 * [x] 2022-07-28 konzultáció gyakorlati feladat (ha van)
-* [ ] 2022-07-29 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-07-29 konzultáció gyakorlati feladat (ha van)
 
 Azt, hogy egy konzultáción adtunk-e ki gyakorlati feladatot, itt tudod ellenőrizni:
 
