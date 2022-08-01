@@ -25,7 +25,7 @@ public class ProductMain {
             System.out.println("Invalid method");
         }
 
-        System.out.println("The new price for " + product.getName() + " is " + product.getPrice());
+        System.out.println("The price of the " + product.getName() + " is " + product.getPrice());
 
     }
 }
