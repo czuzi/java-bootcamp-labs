@@ -8,7 +8,10 @@ public class Mathematics {
 
     public boolean isPrime(int number) {
         for(int i = 2; i < number/2; i++) {
-            if (number % i == 0) b = true;
+            if (number % i == 0) {
+                b = true;
+                break;
+            }
         }
         return b;
     }
