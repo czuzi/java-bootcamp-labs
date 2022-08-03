@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class Mathematics {
 
-    private boolean b = false;
+    private boolean b = true;
 
     public boolean isPrime(int number) {
         for(int i = 2; i < number/2; i++) {
             if (number % i == 0) {
-                b = true;
+                b = false;
                 break;
             }
         }
