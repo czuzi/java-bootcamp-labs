@@ -1,19 +1,17 @@
 package consultations.w02d03;
 
-import java.util.Scanner;
-
 public class Mathematics {
 
-    private boolean b = true;
-
     public boolean isPrime(int number) {
-        for(int i = 2; i < number/2; i++) {
+        if(number <= 1) {
+            return false;
+        }
+        for(int i = 2; i <= Math.sqrt(number); i++) {
             if (number % i == 0) {
-                b = false;
-                break;
+                return false;
             }
         }
-        return b;
+        return true;
     }
 
 }
