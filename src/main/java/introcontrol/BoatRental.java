@@ -10,6 +10,7 @@ public class BoatRental {
         int twoSeatBoat = 0;
 
         Scanner sc = new Scanner(System.in);
+        System.out.println("Hanyan szeretnenek utazni?");
         int group = sc.nextInt();
         sc.nextLine();
 
