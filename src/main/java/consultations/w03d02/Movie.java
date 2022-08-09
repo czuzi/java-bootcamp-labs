@@ -7,7 +7,7 @@ public class Movie {
 
 	private String title;
 	private int releaseDate;
-	List<Actor> listOfActors = new ArrayList<>();
+	private List<Actor> listOfActors = new ArrayList<>();
 
 	public String getTitle() {
 		return title;
