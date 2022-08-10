@@ -6,7 +6,7 @@ public class BookMain {
 
 		Book book = new Book("1984");
 		System.out.println(book.getTitle());
-		book.setTitle("Szived helyen epul mar a halalcsillag");
+		book.setTitle("Crossroads");
 		System.out.println(book.getTitle());
 	}
 }
