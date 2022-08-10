@@ -7,6 +7,7 @@ import java.util.List;
 public class ObjectsMain {
 
 	public static void main(String[] args) {
+
 		new Book();
 		System.out.println(new Book());
 		Book emptyBook;
