@@ -1,6 +1,5 @@
 package consultations.w03d04;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Stock {
