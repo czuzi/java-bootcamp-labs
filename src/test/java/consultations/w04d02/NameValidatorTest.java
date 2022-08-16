@@ -12,18 +12,32 @@ class NameValidatorTest {
 	}
 
 	@Test
+	void isValidNameTrueMultipleNames() {
+		NameValidator nameValidator = new NameValidator();
+		assertTrue(nameValidator.isValidName("John Doe Smith"));
+	}
+
+	@Test
 	void isValidNameFalseFirstName() {
 		NameValidator nameValidator = new NameValidator();
 		assertFalse(nameValidator.isValidName("john Doe"));
 	}
+
 	@Test
 	void isValidNameFalseLastName() {
 		NameValidator nameValidator = new NameValidator();
 		assertFalse(nameValidator.isValidName("John doe"));
 	}
+
 	@Test
-	void isValidNameTrueMultipleNames() {
+	void isValidNameFalseEmptyString() {
 		NameValidator nameValidator = new NameValidator();
-		assertTrue(nameValidator.isValidName("John Doe Smith"));
+		assertFalse(nameValidator.isValidName(""));
+	}
+
+	@Test
+	void isValidNameFalseOneName() {
+		NameValidator nameValidator = new NameValidator();
+		assertFalse(nameValidator.isValidName("John"));
 	}
 }
