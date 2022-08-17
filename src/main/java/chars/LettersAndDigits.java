@@ -1,7 +1,6 @@
 package chars;
 
 public class LettersAndDigits {
-
 	public static void main(String[] args) {
 		LettersAndDigits lettersAndDigits = new LettersAndDigits();
 		lettersAndDigits.printLetterOrDigit("has897ty7d8.m87 ka /k");
