@@ -64,6 +64,7 @@ a típusokról, az operátorokról, valamint megtanultok automatikus tesztesetek
 * [x] 2022-08-11 konzultáció gyakorlati feladat (ha van)
 * [x] 2022-08-12 konzultáció gyakorlati feladat (ha van)
 
+
 Azt, hogy egy konzultáción adtunk-e ki gyakorlati feladatot, itt tudod ellenőrizni:
 
 [Konzultációkon kiadott gyakorlati feladatok](https://github.com/Strukturavaltas3-Alap-Java/java-strukturavalto3-alap/blob/main/labs.md)
