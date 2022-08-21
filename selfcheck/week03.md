@@ -29,26 +29,26 @@ a típusokról, az operátorokról, valamint megtanultok automatikus tesztesetek
 * [x] [Karakter videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993708-karakter)
 * [x] Karakter gyakorlati feladat
 * [x] [Felsorolásos típus videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709804-felsorolasos-tipus)
-* [ ] Felsorolásos típus gyakorlati feladat
+* [x] Felsorolásos típus gyakorlati feladat
 * [x] [Operátorok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709858-operatorok)
-* [ ] Operátorok gyakorlati feladat
-* [ ] Oszthatóság vizsgálata gyakorlati feladat [(Szöveges anyag itt)](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/texts/28278683-oszthatosag-vizsgalata)
-* [ ] [Egész és lebegőpontos számok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709854-egesz-es-lebegopontos-szamok)
-* [ ] Egész és lebegőpontos számok gyakorlati feladat
-* [ ] [Típuskonverzió videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709762-tipuskonverzio)
-* [ ] Típuskonverzió gyakorlati feladat
-* [ ] [Konverziók videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993726-konverziok)
-* [ ] Konverziók gyakorlati feladat
+* [x] Operátorok gyakorlati feladat
+* [x] Oszthatóság vizsgálata gyakorlati feladat [(Szöveges anyag itt)](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/texts/28278683-oszthatosag-vizsgalata)
+* [x] [Egész és lebegőpontos számok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709854-egesz-es-lebegopontos-szamok)
+* [x] Egész és lebegőpontos számok gyakorlati feladat
+* [x] [Típuskonverzió videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709762-tipuskonverzio)
+* [x] Típuskonverzió gyakorlati feladat
+* [x] [Konverziók videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/27993726-konverziok)
+* [x] Konverziók gyakorlati feladat
 
 ## Unit tesztelés JUnittal
 
 * [x] [Unit tesztelés JUnit 4 használatával videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/10709855-unit-teszteles-junit-4-hasznalataval)
 * [x] [JUnit 5 videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/17606488-junit-5)
 * [ ] JUnit 5 gyakorlati feladat
-* [ ] [JUnit 5 assert metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28177547-junit-5-assert-metodusok)
-* [ ] JUnit 5 assert metódusok gyakorlati feladat
-* [ ] [JUnit 5 tesztesetek életciklusa videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28177579-junit-5-tesztesetek-eletciklusa)
-* [ ] JUnit 5 tesztesetek életciklusa gyakorlati feladat
+* [x] [JUnit 5 assert metódusok videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28177547-junit-5-assert-metodusok)
+* [x] JUnit 5 assert metódusok gyakorlati feladat
+* [x] [JUnit 5 tesztesetek életciklusa videó](https://e-learning.training360.com/courses/take/java-se-alapok-java-nyelvi-elemek/lessons/28177579-junit-5-tesztesetek-eletciklusa)
+* [x] JUnit 5 tesztesetek életciklusa gyakorlati feladat
 
 ## Konzultációk
 
