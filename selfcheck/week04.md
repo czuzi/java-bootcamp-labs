@@ -37,13 +37,13 @@ a vezérlési szerkezetekről fogtok tanulni részletesebben.
 * [x] 2022-08-15 konzultáció részvétel/videó
 * [x] 2022-08-16 konzultáció részvétel/videó
 * [x] 2022-08-17 konzultáció részvétel/videó
-* [ ] 2022-08-18 konzultáció részvétel/videó
+* [x] 2022-08-18 konzultáció részvétel/videó
 * [x] 2022-08-19 konzultáció részvétel/videó
 
-* [ ] 2022-08-15 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-08-15 konzultáció gyakorlati feladat (ha van)
 * [x] 2022-08-16 konzultáció gyakorlati feladat (ha van)
 * [x] 2022-08-17 konzultáció gyakorlati feladat (ha van)
-* [ ] 2022-08-18 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-08-18 konzultáció gyakorlati feladat (ha van)
 * [x] 2022-08-19 konzultáció gyakorlati feladat (ha van)
 
 Azt, hogy egy konzultáción adtunk-e ki gyakorlati feladatot, itt tudod ellenőrizni:
