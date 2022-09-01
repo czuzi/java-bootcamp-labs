@@ -18,8 +18,8 @@ class FirstATest {
 
     @Test
     void testLoadFromWrongFile() {
-        IllegalStateException exception = assertThrows(IllegalStateException.class,
-                () -> new FirstA(Paths.get("src/test/resources/schoolequipment_.csv")),
-                "Cant read the file");
+        assertThrows(IllegalStateException.class,
+            () -> new FirstA(Paths.get("src/test/resources/schoolequipment_.csv")),
+            "Cant read the file");
     }
 }
