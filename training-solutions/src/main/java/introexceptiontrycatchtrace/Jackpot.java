@@ -1,7 +1,5 @@
 package introexceptiontrycatchtrace;
 
-import java.util.Scanner;
-
 public class Jackpot {
 
 	public static void main(String[] args) {
