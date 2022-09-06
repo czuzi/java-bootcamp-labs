@@ -2,9 +2,9 @@ package introexceptionthrow.patient;
 
 public class Patient {
 
-    private String name;
-    private String socialSecurityNumber;
-    private int yearOfBirth;
+    private final String name;
+    private final String socialSecurityNumber;
+    private final int yearOfBirth;
 
     public Patient(String name, String socialSecurityNumber, int yearOfBirth) {
         this.name = validateName(name);
