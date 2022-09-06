@@ -16,6 +16,11 @@ public class Patient {
         this.yearOfBirth = validateYearOfBirth(yearOfBirth);
     }
 
+    public static void main(String[] args) {
+        Patient patient = new Patient("john", "111111110", 1922);
+        System.out.println(patient);
+    }
+
     public String getName() {
         return name;
     }
@@ -40,5 +45,14 @@ public class Patient {
             throw new IllegalArgumentException("Must be at least 1900");
         }
         return yearOfBirth;
+    }
+
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "name='" + name + '\'' +
+                ", socialSecurityNumber='" + socialSecurityNumber + '\'' +
+                ", yearOfBirth=" + yearOfBirth +
+                '}';
     }
 }
