@@ -3,8 +3,8 @@ package introexceptionthrow.patient;
 public class Snn {
 
     public boolean isValidSnn(String snn) {
-        if (!(Integer.parseInt(snn) == 9)) {
-            throw new IllegalArgumentException("snn must be exacty nine digits");
+        if (snn.length() != 9) {
+            throw new IllegalArgumentException("snn must be exactly nine digits");
         }
         int res = 0;
         for (int i = 0; i < snn.length()-1; i++) {
@@ -15,10 +15,6 @@ public class Snn {
                 res += parseInt * 7;
             }
         }
-        if (res % 10 == Integer.parseInt(Character.toString(snn.charAt(8)))) {
-            return true;
-        } else {
-            return false;
-        }
+        return res % 10 == Integer.parseInt(Character.toString(snn.charAt(8)));
     }
 }

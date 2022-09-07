@@ -2,7 +2,7 @@ package introexceptionthrow;
 
 public class Validate {
 
-    public void ValidateName(String name) {
+    public void validateName(String name) {
         if (name == null || "".equals(name.strip())) {
             throw new IllegalArgumentException("Name cannot be empty or null");
         }

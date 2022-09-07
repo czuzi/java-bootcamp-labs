@@ -11,7 +11,7 @@ public class Registration {
         System.out.println("Enter your name:");
         String name = sc.nextLine();
         try {
-            validate.ValidateName(name);
+            validate.validateName(name);
         } catch (IllegalArgumentException iae) {
             isValid = false;
             System.out.println(iae.getMessage());
