@@ -11,7 +11,7 @@ public class Neptun {
 	public static void main(String[] args) {
 		Neptun neptun = new Neptun();
 		try {
-			neptun.readFile(Path.of("src/main/resources/neptun_.csv"));
+			neptun.readFile(Path.of("src/main/resources/neptun.csv"));
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
