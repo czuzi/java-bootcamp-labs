@@ -38,17 +38,17 @@ Ezen a héten a kivétel- és fájlkezelést fogjátok alapszinten megismerni.
 
 ## Konzultációk
 
-* [ ] 2022-08-29 konzultáció részvétel/videó
-* [ ] 2022-08-30 konzultáció részvétel/videó
-* [ ] 2022-08-31 konzultáció részvétel/videó
-* [ ] 2022-09-01 konzultáció részvétel/videó
-* [ ] 2022-09-02 konzultáció részvétel/videó
+* [x] 2022-08-29 konzultáció részvétel/videó
+* [x] 2022-08-30 konzultáció részvétel/videó
+* [x] 2022-08-31 konzultáció részvétel/videó
+* [x] 2022-09-01 konzultáció részvétel/videó
+* [x] 2022-09-02 konzultáció részvétel/videó
 
-* [ ] 2022-08-29 konzultáció gyakorlati feladat (ha van)
-* [ ] 2022-08-30 konzultáció gyakorlati feladat (ha van)
-* [ ] 2022-08-31 konzultáció gyakorlati feladat (ha van)
-* [ ] 2022-09-01 konzultáció gyakorlati feladat (ha van)
-* [ ] 2022-09-02 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-08-29 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-08-30 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-08-31 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-09-01 konzultáció gyakorlati feladat (ha van)
+* [x] 2022-09-02 konzultáció gyakorlati feladat (ha van)
 
 Azt, hogy egy konzultáción adtunk-e ki gyakorlati feladatot, itt tudod ellenőrizni:
 
