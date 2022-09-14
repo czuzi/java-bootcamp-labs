@@ -1,0 +1,4 @@
+G 25;Egri csillagok;Gardonyi Geza
+M 79;Pal utcai fiuk;Molnar Ferenc
+F 37;Tuskevar;Fekete Istvan
+J 68;Koszivu ember fiai;Jokai Mor
