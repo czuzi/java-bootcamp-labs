@@ -37,9 +37,6 @@ public class Monument {
 	}
 
 	private boolean isEmpty(String text) {
-		if (text == null || text.isBlank()) {
-			return true;
-		}
-		return false;
+		return text == null || text.isBlank();
 	}
 }
