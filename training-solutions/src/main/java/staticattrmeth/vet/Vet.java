@@ -6,7 +6,7 @@ import java.util.List;
 public class Vet {
 
 	private List<Dog> dogs = new ArrayList<>();
-	public static long code = 1;
+	private static long code = 1;
 
 	public List<Dog> getDogs() {
 		return dogs;
