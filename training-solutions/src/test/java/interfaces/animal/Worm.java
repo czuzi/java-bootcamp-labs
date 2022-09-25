@@ -2,16 +2,15 @@ package interfaces.animal;
 
 public class Worm implements Animal {
 
-	private String name = "Worm";
-	private int numberOfLegs = 0;
+	public static final int NUMBER_OF_LEGS = 0;
 
 	@Override
 	public int getNumberOfLegs() {
-		return numberOfLegs;
+		return NUMBER_OF_LEGS;
 	}
 
 	@Override
 	public String getName() {
-		return name;
+		return "Worm";
 	}
 }
