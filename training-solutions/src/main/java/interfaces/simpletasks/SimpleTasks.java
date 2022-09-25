@@ -1,4 +1,4 @@
-package interfaces.interfaces.simpletasks;
+package interfaces.simpletasks;
 
 import java.util.ArrayList;
 import java.util.List;

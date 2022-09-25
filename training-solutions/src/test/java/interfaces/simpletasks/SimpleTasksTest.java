@@ -1,5 +1,6 @@
-package interfaces.interfaces.simpletasks;
+package interfaces.simpletasks;
 
+import interfaces.simpletasks.SimpleTasks;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
