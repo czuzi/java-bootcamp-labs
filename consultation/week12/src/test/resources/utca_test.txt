@@ -1,0 +1,11 @@
+34093 Kossuth 25B C 120
+10962 Kossuth 25C C 120
+96094 Kossuth 26 C 181
+48154 Kossuth 27 C 299
+81752 Kossuth 29 C 79
+63774 Kurta 1 A 255
+96094 Kurta 2 B 48
+80018 Kurta 3 A 184
+12995 Malom 1 C 282
+48154 Malom 27 B 125
+96094 Nárcisz 1 A 135
