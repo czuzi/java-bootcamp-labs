@@ -23,4 +23,9 @@ public class Clients {
 		}
 		return clientList.get(index);
 	}
+
+	public Client findClientByRegNumberIndexOf(String regNumber) {
+		int index = clientList.indexOf(new Client(null, regNumber));
+		return clientList.get(index);
+	}
 }

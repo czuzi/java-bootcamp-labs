@@ -25,4 +25,10 @@ class ClientsTest {
 		Client client = clients.findClientByRegNumber("123");
 		assertEquals("John", client.getName());
 	}
+
+	@Test
+	void testFindClientByRegNumberIndexOF() {
+		Client client = clients.findClientByRegNumberIndexOf("123");
+		assertEquals("John", client.getName());
+	}
 }
