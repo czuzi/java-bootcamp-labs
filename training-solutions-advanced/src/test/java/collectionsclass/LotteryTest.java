@@ -27,5 +27,6 @@ class LotteryTest {
 		List<Integer> winningNumbers = new Lottery().selectWinningNumbers(lotteryType, ballCount);
 		//Then
 		assertEquals(lotteryType, winningNumbers.size());
+		System.out.println(winningNumbers);
 	}
 }

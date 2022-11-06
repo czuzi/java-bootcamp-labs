@@ -16,10 +16,11 @@ public class Lottery {
 
 	private List<Integer> drawNumbers(int lotteryType, List<Integer> pool) {
 		List<Integer> winningNumbers = new ArrayList<>();
-		Collections.shuffle(winningNumbers);
+		Collections.shuffle(pool);
 		for (int i = 0; i < lotteryType; i++) {
 			winningNumbers.add(pool.get(i));
 		}
+		Collections.sort(winningNumbers);
 		return winningNumbers;
 	}
 
