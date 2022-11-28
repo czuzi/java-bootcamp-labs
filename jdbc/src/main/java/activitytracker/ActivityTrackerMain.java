@@ -30,7 +30,7 @@ public class ActivityTrackerMain {
 		ds.setPassword("activitytracker");
 
 		ActivityTrackerMain main = new ActivityTrackerMain();
-//		saveActivities(activities, ds);
+		saveActivities(activities, ds);
 		List<Activity> activityListFromQuery = main.listAllActivities(ds);
 		System.out.println(activityListFromQuery.stream().map(Activity::getDescription).toList());
 
