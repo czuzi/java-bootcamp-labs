@@ -15,6 +15,13 @@ public class Activity {
 		this.activityType = activityType;
 	}
 
+	public Activity(int id, LocalDateTime startTime, String description, ActivityType activityType) {
+		this.id = id;
+		this.startTime = startTime;
+		this.description = description;
+		this.activityType = activityType;
+	}
+
 	public int getId() {
 		return id;
 	}
