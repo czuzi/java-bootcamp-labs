@@ -5,8 +5,10 @@ import org.flywaydb.core.Flyway;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -77,5 +79,39 @@ class ActivityDaoTest {
 		Activity expected = dao.saveActivityAndReturnKey(activity);
 
 		assertEquals(6, expected.getId());
+	}
+
+	@Test
+	void testSaveActivityWithTrackPointsEverythingIsOK() {
+		TrackPoint trackPoint1 = new TrackPoint(LocalDate.of(2021, 2, 24), 47.2181020, 18.5411940);
+		TrackPoint trackPoint2 = new TrackPoint(LocalDate.of(2021, 2, 24), 47.2181230, 18.5411780);
+		TrackPoint trackPoint3 = new TrackPoint(LocalDate.of(2020, 12, 14), 47.2302470, 18.5472280);
+		TrackPoint trackPoint4 = new TrackPoint(LocalDate.of(2020, 12, 14), 47.2302550, 18.5472310);
+		TrackPoint trackPoint5 = new TrackPoint(LocalDate.of(2020, 12, 14), 47.2302552, 18.5472312);
+		List<TrackPoint> trackPoints = Arrays.asList(trackPoint1, trackPoint2, trackPoint3, trackPoint4, trackPoint5);
+		Activity activity = new Activity(LocalDateTime.of(2020, 12, 14, 15, 30), "laza délutáni futás", ActivityType.RUNNING, trackPoints);
+
+		dao.saveActivityAndTrackPoints(activity);
+		Activity expected = dao.findActivityWithTrackPointsById(6);
+
+		assertEquals(activity.getStartTime(), expected.getStartTime());
+		assertEquals(activity.getDescription(), expected.getDescription());
+		assertEquals(activity.getType(), expected.getType());
+		assertEquals(activity.getTrackPoints().size(), expected.getTrackPoints().size());
+		assertEquals(expected.getTrackPoints(), trackPoints);
+	}
+
+	@Test
+	void testSaveActivitywithTrackPointsSomethingIsWrong() {
+		TrackPoint trackPoint1 = new TrackPoint(LocalDate.of(2021, 2, 24), 47.2181020, 18.5411940);
+		TrackPoint trackPoint2 = new TrackPoint(LocalDate.of(2021, 2, 24), 47.2181230, 18.5411780);
+		TrackPoint trackPoint3 = new TrackPoint(LocalDate.of(2020, 12, 14), 47.2302470, 15238.5472280);
+		TrackPoint trackPoint4 = new TrackPoint(LocalDate.of(2020, 12, 14), 47.2302550, 18.5472310);
+		List<TrackPoint> trackPoints = Arrays.asList(trackPoint1, trackPoint2, trackPoint3, trackPoint4);
+		Activity activity = new Activity(LocalDateTime.of(2020, 12, 14, 15, 30), "laza délutáni futás", ActivityType.RUNNING, trackPoints);
+
+		assertThrows(IllegalStateException.class, () -> dao.saveActivityAndTrackPoints(activity), "Transaction failed");
+
+		assertThrows(IllegalArgumentException.class, () -> dao.findActivityWithTrackPointsById(6), "No activity with this id.");
 	}
 }
