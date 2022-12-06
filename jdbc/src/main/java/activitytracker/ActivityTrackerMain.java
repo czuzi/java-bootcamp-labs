@@ -30,7 +30,7 @@ public class ActivityTrackerMain {
 		ds.setPassword("activitytracker");
 
 		ActivityTrackerMain main = new ActivityTrackerMain();
-		saveActivities(activities, ds);
+		main.saveActivities(activities, ds);
 		List<Activity> activityListFromQuery = main.listAllActivities(ds);
 		System.out.println(activityListFromQuery.stream().map(Activity::getDescription).toList());
 
@@ -84,7 +84,7 @@ public class ActivityTrackerMain {
 		return res;
 	}
 
-	private static void saveActivities(List<Activity> activities, MysqlDataSource ds) {
+	private void saveActivities(List<Activity> activities, MysqlDataSource ds) {
 		try (Connection conn = ds.getConnection();
 			 PreparedStatement stmt = conn.prepareStatement("insert into activities (start_time, activity_description, activity_type) values (?, ?, ?);")) {
 			for (Activity activity: activities) {

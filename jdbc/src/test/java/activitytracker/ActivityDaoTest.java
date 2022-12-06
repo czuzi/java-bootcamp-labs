@@ -3,6 +3,7 @@ package activitytracker;
 import com.mysql.cj.jdbc.MysqlDataSource;
 import org.flywaydb.core.Flyway;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -23,6 +24,10 @@ class ActivityDaoTest {
 
 		dao = new ActivityDao(ds);
 
+		Flyway fw = Flyway.configure().cleanDisabled(false).dataSource(ds).load();
+		fw.clean();
+		fw.migrate();
+
 		List<Activity> activities = new ArrayList<>();
 		Activity activity1 = new Activity(LocalDateTime.of(2021, 2, 22, 15, 35), "futás a parkban", ActivityType.RUNNING);
 		activities.add(activity1);
@@ -34,9 +39,11 @@ class ActivityDaoTest {
 		activities.add(activity4);
 		Activity activity5 = new Activity(LocalDateTime.of(2020, 12, 22, 7, 52), "kis kör a tó körül", ActivityType.RUNNING);
 		activities.add(activity5);
+		dao.saveActivities(activities);
+	}
 
-		Flyway fw = Flyway.configure().cleanDisabled(false).dataSource(ds).load();
-		fw.clean();
-		fw.migrate();
+	@Test
+	void testFlywayMigration() {
+		assertEquals(5, dao.listAllActivities().size());
 	}
 }
