@@ -65,7 +65,6 @@ class ActivityDaoTest {
 	@Test
 	void testListActivities() {
 		List<Activity> activities = dao.listAllActivities();
-
 		assertEquals(5, activities.size());
 		assertEquals(LocalDateTime.of(2020, 8, 10, 11, 12), activities.get(1).getStartTime());
 		assertEquals("egész napos bicótúra", activities.get(2).getDescription());
