@@ -46,4 +46,37 @@ class ActivityDaoTest {
 	void testFlywayMigration() {
 		assertEquals(5, dao.listAllActivities().size());
 	}
+
+	@Test
+	void testSaveActivity() {
+		dao.saveActivity(new Activity(LocalDateTime.of(2022, 10, 22, 7, 52), "nagy kor a to korul", ActivityType.BIKING));
+		assertEquals(6, dao.listAllActivities().size());
+	}
+
+	@Test
+	void testFindActivityById() {
+		Activity activity = dao.findActivityById(4).orElseThrow();
+
+		assertEquals(LocalDateTime.of(2021, 1, 22, 9, 46), activity.getStartTime());
+		assertEquals("meccs az iskola tornatermében", activity.getDescription());
+		assertEquals(ActivityType.BASKETBALL, activity.getType());
+	}
+
+	@Test
+	void testListActivities() {
+		List<Activity> activities = dao.listAllActivities();
+
+		assertEquals(5, activities.size());
+		assertEquals(LocalDateTime.of(2020, 8, 10, 11, 12), activities.get(1).getStartTime());
+		assertEquals("egész napos bicótúra", activities.get(2).getDescription());
+		assertEquals(ActivityType.RUNNING, activities.get(4).getType());
+	}
+
+	@Test
+	void testSaveActivityAndReturnGeneratedKeys() {
+		Activity activity = new Activity(LocalDateTime.of(2021, 2, 23, 9, 56), "séta a kertben a napon", ActivityType.RUNNING);
+		Activity expected = dao.saveActivityAndReturnKey(activity);
+
+		assertEquals(6, expected.getId());
+	}
 }
