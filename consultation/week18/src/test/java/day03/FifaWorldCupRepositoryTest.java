@@ -5,8 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mariadb.jdbc.MariaDbDataSource;
 
-import javax.sql.DataSource;
-
 import java.sql.SQLException;
 import java.time.LocalDate;
 
@@ -59,5 +57,11 @@ class FifaWorldCupRepositoryTest {
 	@Test
 	void testListGamesOnDateGiven() {
 		assertEquals(3, fifaWorldCupRepository.listAllGamesOnGivenDate(LocalDate.of(2022, 11, 22)).size());
+	}
+
+	@Test
+	void testFindGameWithMostGoals() {
+		Game expected = new Game(LocalDate.of(2022,11,22),"France","Australia",4,1);
+		assertEquals(expected.getFirstTeam(), fifaWorldCupRepository.findGameWithMostGoals().getFirstTeam());
 	}
 }

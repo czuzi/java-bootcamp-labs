@@ -43,4 +43,15 @@ public class FifaWorldCupRepository {
 						rs.getInt("second_team_score")
 				)), Date.valueOf(date));
 	}
+
+	public Game findGameWithMostGoals() {
+		return jdbcTemplate.queryForObject("SELECT *, MAX(first_team_score + second_team_score) FROM fifa_world_cup;", ((rs, rowNum) -> new Game(
+				rs.getLong("id"),
+				rs.getDate("date_of_game").toLocalDate(),
+				rs.getString("first_team"),
+				rs.getString("second_team"),
+				rs.getInt("first_team_score"),
+				rs.getInt("second_team_score")
+		)));
+	}
 }
