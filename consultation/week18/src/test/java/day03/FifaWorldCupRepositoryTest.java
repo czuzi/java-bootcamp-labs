@@ -33,10 +33,7 @@ class FifaWorldCupRepositoryTest {
 
 		flyway.clean();
 		flyway.migrate();
-	}
 
-	@Test
-	void testInsertGameAndListGames() {
 		fifaWorldCupRepository.insertGame(
 				new Game(LocalDate.of(2022,11,22),"France","Australia",4,1)
 		);
@@ -52,7 +49,15 @@ class FifaWorldCupRepositoryTest {
 		fifaWorldCupRepository.insertGame(
 				new Game(LocalDate.of(2022,11,22),"Argentina","Saudi-Arabia",1,2)
 		);
+	}
 
+	@Test
+	void testInsertGameAndListGames() {
 		assertEquals(4, fifaWorldCupRepository.listAllGames().size());
+	}
+
+	@Test
+	void testListGamesOnDateGiven() {
+		assertEquals(3, fifaWorldCupRepository.listAllGamesOnGivenDate(LocalDate.of(2022, 11, 22)).size());
 	}
 }
