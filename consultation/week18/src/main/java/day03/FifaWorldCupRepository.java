@@ -44,8 +44,14 @@ public class FifaWorldCupRepository {
 				)), Date.valueOf(date));
 	}
 
+	public Integer findMostGoalsInOneGame() {
+		return jdbcTemplate.queryForObject("SELECT MAX(first_team_score + second_team_score) AS goals FROM fifa_world_cup;",
+				((rs, rowNum) -> rs.getInt("goals")));
+	}
+
 	public Game findGameWithMostGoals() {
-		return jdbcTemplate.queryForObject("SELECT *, MAX(first_team_score + second_team_score) FROM fifa_world_cup;", ((rs, rowNum) -> new Game(
+		return jdbcTemplate.queryForObject("SELECT *, MAX(first_team_score + second_team_score) FROM fifa_world_cup;",
+				((rs, rowNum) -> new Game(
 				rs.getLong("id"),
 				rs.getDate("date_of_game").toLocalDate(),
 				rs.getString("first_team"),
@@ -53,5 +59,11 @@ public class FifaWorldCupRepository {
 				rs.getInt("first_team_score"),
 				rs.getInt("second_team_score")
 		)));
+	}
+
+	public List<String> findAllTeamWhichHasPlayed() {
+		return jdbcTemplate.query(
+				"SELECT DISTINCT first_team AS team FROM fifa_world_cup UNION SELECT DISTINCT second_team AS team FROM fifa_world_cup;",
+				((rs, rowNum) -> rs.getString("team")));
 	}
 }

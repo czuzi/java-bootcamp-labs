@@ -60,8 +60,20 @@ class FifaWorldCupRepositoryTest {
 	}
 
 	@Test
+	void testFindMostGoalsInOneGame() {
+		assertEquals(5, fifaWorldCupRepository.findMostGoalsInOneGame());
+	}
+
+	@Test
 	void testFindGameWithMostGoals() {
 		Game expected = new Game(LocalDate.of(2022,11,22),"France","Australia",4,1);
 		assertEquals(expected.getFirstTeam(), fifaWorldCupRepository.findGameWithMostGoals().getFirstTeam());
+	}
+
+	@Test
+	void testFindAllTeamWhichHasPlayed() {
+		assertEquals(8, fifaWorldCupRepository.findAllTeamWhichHasPlayed().size());
+		fifaWorldCupRepository.insertGame(new Game(LocalDate.of(2022,11,25),"France","Belgium",4,1));
+		assertEquals(9, fifaWorldCupRepository.findAllTeamWhichHasPlayed().size());
 	}
 }
