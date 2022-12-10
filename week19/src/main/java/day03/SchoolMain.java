@@ -27,5 +27,15 @@ public class SchoolMain {
 
 		SchoolStudentService service = new SchoolStudentService(schoolRepository,studentRepository);
 
+		List<School> schoolsByCity = service.findSchoolsByCity("Debrecen");
+
+		schoolsByCity.forEach(s-> System.out.println(s.getSchoolName()));
+
+		List<Student> students = service.findStudentsByYearInSchool(11,1);
+
+		students.forEach(s-> System.out.println(s.getName()));
+
+		System.out.println(service.findSchoolWithMostStudentsJava().getSchoolName());
+		System.out.println(service.findSchoolWithMostStudentsSql().getSchoolName());
 	}
 }

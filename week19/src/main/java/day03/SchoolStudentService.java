@@ -31,4 +31,26 @@ public class SchoolStudentService {
 		List<Student> students = new ArrayList<>();
 		return new School(school.getSchoolName(),school.getCity(),students);
 	}
+
+	public List<School> findSchoolsByCity(String city){
+		return schoolRepository.findSchoolsByCity(city);
+	}
+
+	public List<Student> findStudentsByYearInSchool(int year, int schoolId) {
+		return studentRepository.findStudentsByYearInSchool(year,schoolId);
+	}
+
+	public School findSchoolWithMostStudentsJava(){
+		List<School> allSchools = schoolRepository.findAllSchool();
+		for(School school : allSchools){
+			List<Student> students = studentRepository.findAllStudentsBySchool(school.getId());
+			school.addAllStudents(students);
+		}
+		return allSchools.stream()
+				.max(Comparator.comparing(s->s.getStudents().size())).orElseThrow(()->new IllegalStateException("No schools!"));
+	}
+
+	public School findSchoolWithMostStudentsSql(){
+		return schoolRepository.findSchoolWithMostStudents();
+	}
 }
